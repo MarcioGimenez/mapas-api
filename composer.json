@@ -12,7 +12,9 @@
         "cakephp/plugin-installer": "~1.0",
         "josegonzalez/dotenv": "2.*",
         "friendsofcake/crud": "^5.2",
-        "friendsofcake/search": "^4.0"
+        "friendsofcake/search": "^4.0",
+        "neomerx/json-api": "^1.0",
+        "friendsofcake/crud-json-api": "^0.2.0"
     },
     "require-dev": {
         "psy/psysh": "@stable",
