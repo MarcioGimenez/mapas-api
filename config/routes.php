@@ -80,6 +80,24 @@ Router::prefix('api/v1' , function(RouteBuilder $routes) {
     $routes->resources('Aplicacoes');
 });
 
+
+Router::prefix('api/v1' , function(RouteBuilder $routes) {
+    $routes->setExtensions(['json','xml']);
+    $routes->resources('Idiomas');
+});
+
+
+Router::prefix('api/v1' , function(RouteBuilder $routes) {
+    $routes->setExtensions(['json','xml']);
+    $routes->resources('Configuracoes');
+});
+
+
+Router::prefix('api/v1' , function(RouteBuilder $routes) {
+    $routes->setExtensions(['json','xml']);
+    $routes->resources('LocaisAplicacoes');
+});
+
 /**
  * Load all plugin routes. See the Plugin documentation on
  * how to customize the loading of plugin routes.

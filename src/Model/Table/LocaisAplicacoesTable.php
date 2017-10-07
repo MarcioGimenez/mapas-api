@@ -41,6 +41,19 @@ class LocaisAplicacoesTable extends Table
 
         $this->addBehavior('Timestamp');
 
+        $this->addBehavior('Search.Search');
+
+        $this->searchManager()
+            ->add('q', 'Search.Like',[
+                'before' => true,
+                'after' => true,
+                'fieldMode' => 'OR',
+                'comparisan' => 'like',
+                'wildcardAny' => '*',
+                'wildcardOne' => '?',
+                'field' => ['aplicacao_id'],
+            ]);
+
         $this->belongsTo('Aplicacoes', [
             'foreignKey' => 'aplicacao_id',
             'joinType' => 'INNER'

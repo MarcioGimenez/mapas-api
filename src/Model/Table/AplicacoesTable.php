@@ -48,9 +48,6 @@ class AplicacoesTable extends Table
                 'wildcardAny' => '*',
                 'wildcardOne' => '?',
                 'field' => ['dominio','tld'],
-
-
-
             ]);
     }
 
