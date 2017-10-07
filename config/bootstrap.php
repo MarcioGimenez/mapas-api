@@ -219,3 +219,5 @@ if (Configure::read('debug')) {
 Plugin::load('Crud');
 
 Plugin::load('Search');
+
+Plugin::load('ADmad/JwtAuth');

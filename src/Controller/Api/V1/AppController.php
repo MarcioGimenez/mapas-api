@@ -57,11 +57,35 @@ class AppController extends Controller
                 'Crud.Delete',
             ],
             'listeners' => [
-                'CrudJsonApi.JsonApi',
                 'Crud.ApiPagination',
                 'Crud.ApiQueryLog',
                 'Crud.Search'
             ]
+        ]);
+
+        if ($this->request->getParam('controller') == 'Users') {
+            $this->Crud->addListener('Crud.Api');
+        } else {
+            $this->Crud->addListener('CrudJsonApi.JsonApi');
+        }
+        $this->loadComponent('Auth', [
+            'storage' => 'Memory',
+            'authenticate' => [
+                'Form' => [
+                    'scope' => ['Users.active' => 1]
+                ],
+                'ADmad/JwtAuth.Jwt' => [
+                    'parameter' => 'token',
+                    'userModel' => 'Users',
+                    //'scope' => ['Users.active' => 1],
+                    'fields' => [
+                        'username' => 'id'
+                    ],
+                    'queryDatasource' => true
+                ]
+            ],
+            'unauthorizedRedirect' => false,
+            'checkAuthIn' => 'Controller.initialize'
         ]);
 
     }
