@@ -221,3 +221,5 @@ Plugin::load('Crud');
 Plugin::load('Search');
 
 Plugin::load('ADmad/JwtAuth');
+
+Plugin::load('Cors', ['bootstrap' => true]);
