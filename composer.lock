@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "55a686b9940399a3f1012e43bcab7c78",
-    "content-hash": "163c94a955a9c68b07a07d64efc0940d",
+    "hash": "1bc6989384b052d4b6a453d0d923eadb",
+    "content-hash": "abc58252dbda7895ea3ea57b31efd43b",
     "packages": [
         {
             "name": "aura/intl",
@@ -288,6 +288,81 @@
             ],
             "description": "A composer installer for CakePHP 3.0+ plugins.",
             "time": "2017-03-21 13:48:47"
+        },
+        {
+            "name": "friendsofcake/crud",
+            "version": "5.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfCake/crud.git",
+                "reference": "ae533de6c23a362e3b7ac0f35a62c8cddf9d178e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfCake/crud/zipball/ae533de6c23a362e3b7ac0f35a62c8cddf9d178e",
+                "reference": "ae533de6c23a362e3b7ac0f35a62c8cddf9d178e",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "^3.2.2"
+            },
+            "require-dev": {
+                "friendsofcake/cakephp-test-utilities": "dev-master",
+                "friendsofcake/search": "dev-master",
+                "phpunit/phpunit": "<6.0"
+            },
+            "suggest": {
+                "friendsofcake/crud-json-api": "Crud listener for building APIs following the JSON API specification",
+                "friendsofcake/crud-view": "Automated admin backend based on your Crud configuration.",
+                "friendsofcake/search": "Provides search capabilities for the Crud plugin."
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Crud\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Winther",
+                    "homepage": "http://cakephp.nu/",
+                    "role": "Author"
+                },
+                {
+                    "name": "José Lorenzo Rodríguez",
+                    "homepage": "https://github.com/lorenzo",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "Andy Dawson",
+                    "homepage": "https://github.com/ad7six",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "ADmad",
+                    "homepage": "https://github.com/admad",
+                    "role": "Contributor"
+                }
+            ],
+            "description": "CakePHP Application development on steroids - rapid prototyping / scaffolding & production ready code - XML / JSON APIs and more",
+            "homepage": "https://github.com/FriendsOfCake/crud",
+            "keywords": [
+                "bake",
+                "cake",
+                "cakephp",
+                "create",
+                "crud",
+                "delete",
+                "retrieve",
+                "scaffold",
+                "scaffolding",
+                "update"
+            ],
+            "time": "2017-08-30 18:37:42"
         },
         {
             "name": "josegonzalez/dotenv",
