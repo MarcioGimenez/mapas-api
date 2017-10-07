@@ -82,6 +82,8 @@ Router::prefix('api/v1' , function(RouteBuilder $routes) {
     $routes->resources('Configuracoes');
     $routes->resources('LocaisAplicacoes');
     $routes->resources('Users');
+
+    $routes->fallbacks(DashedRoute::class);
 });
 
 /**
