@@ -60,7 +60,7 @@ class AppController extends Controller
                 'Crud.Api',
                 'Crud.ApiPagination',
                 'Crud.ApiQueryLog',
-                //'Crud.Search'
+                'Crud.Search'
             ]
         ]);
 
