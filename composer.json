@@ -11,7 +11,8 @@
         "cakephp/migrations": "~1.0",
         "cakephp/plugin-installer": "~1.0",
         "josegonzalez/dotenv": "2.*",
-        "friendsofcake/crud": "^5.2"
+        "friendsofcake/crud": "^5.2",
+        "friendsofcake/search": "^4.0"
     },
     "require-dev": {
         "psy/psysh": "@stable",
