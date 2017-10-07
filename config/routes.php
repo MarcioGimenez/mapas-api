@@ -78,23 +78,8 @@ Router::scope('/', function (RouteBuilder $routes) {
 Router::prefix('api/v1' , function(RouteBuilder $routes) {
     $routes->setExtensions(['json','xml']);
     $routes->resources('Aplicacoes');
-});
-
-
-Router::prefix('api/v1' , function(RouteBuilder $routes) {
-    $routes->setExtensions(['json','xml']);
     $routes->resources('Idiomas');
-});
-
-
-Router::prefix('api/v1' , function(RouteBuilder $routes) {
-    $routes->setExtensions(['json','xml']);
     $routes->resources('Configuracoes');
-});
-
-
-Router::prefix('api/v1' , function(RouteBuilder $routes) {
-    $routes->setExtensions(['json','xml']);
     $routes->resources('LocaisAplicacoes');
 });
 
