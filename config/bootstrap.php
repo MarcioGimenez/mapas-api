@@ -217,3 +217,5 @@ if (Configure::read('debug')) {
 }
 
 Plugin::load('Crud');
+
+Plugin::load('Search');
