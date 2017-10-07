@@ -81,6 +81,7 @@ Router::prefix('api/v1' , function(RouteBuilder $routes) {
     $routes->resources('Idiomas');
     $routes->resources('Configuracoes');
     $routes->resources('LocaisAplicacoes');
+    $routes->resources('Users');
 });
 
 /**
