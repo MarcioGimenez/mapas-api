@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9010638bcde983066ad2935ca8038bd5",
-    "content-hash": "a155ef6fc84e731b35d2b8bac464bff9",
+    "hash": "2516cf2c9e3f5d51bc4cff6a1ad5b82f",
+    "content-hash": "c28fcef0c093389a7187aae262f147f3",
     "packages": [
         {
             "name": "admad/cakephp-jwt-auth",
@@ -792,6 +792,37 @@
                 "neomerx"
             ],
             "time": "2017-09-13 11:23:47"
+        },
+        {
+            "name": "ozee31/cakephp-cors",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ozee31/cakephp-cors.git",
+                "reference": "3e56f65a597878785e22897cf2029f4c06a489e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ozee31/cakephp-cors/zipball/3e56f65a597878785e22897cf2029f4c06a489e4",
+                "reference": "3e56f65a597878785e22897cf2029f4c06a489e4",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": ">=3.3.2 <4.0.0",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.*"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Cors\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "A CakePHP (3.3.x) plugin for activate cors domain in your application",
+            "time": "2017-08-14 09:04:18"
         },
         {
             "name": "psr/http-message",
